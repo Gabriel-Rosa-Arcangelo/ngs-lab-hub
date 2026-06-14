@@ -239,13 +239,17 @@ docker compose exec web python manage.py spectacular --file /tmp/openapi.yaml --
   - `S3_PRESIGN_ENDPOINT_URL=http://localhost:9000`
 - Restart services after env changes: `make down && make up`.
 
-## Screenshots (Placeholders)
-- `docs/screenshots/demo-recorder.png`
-- `docs/screenshots/dashboard.png`
-- `docs/screenshots/samples-crud.png`
-- `docs/screenshots/exports-list.png`
-- `docs/screenshots/export-detail.png`
-- `docs/screenshots/minio-objects.png`
+## Screenshots
+
+### Dashboard
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Samples and async exports
+![Samples CRUD](docs/screenshots/samples-crud.png)
+![Export detail](docs/screenshots/export-detail.png)
+
+### Object storage
+![MinIO objects](docs/screenshots/minio-objects.png)
 
 ## Notes for Portfolio Reviewers
 This project intentionally focuses on operational reliability patterns common in production export systems: async processing, resumable job state, storage decoupling, role-based access controls, and documentation-first API workflows.

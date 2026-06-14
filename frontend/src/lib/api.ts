@@ -70,7 +70,7 @@ export interface CreateNgsSequencePayload {
   pipeline_status: NgsPipelineStatus
 }
 
-export interface UpdateNgsSequencePayload extends Partial<CreateNgsSequencePayload> {}
+export type UpdateNgsSequencePayload = Partial<CreateNgsSequencePayload>
 
 export interface ExportEvent {
   id: number
